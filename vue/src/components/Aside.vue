@@ -15,7 +15,7 @@
       <template #title>系统管理</template>
       <el-menu-item index="/user">人员管理</el-menu-item>
     </el-sub-menu>
-    <el-menu-item index="/data">
+    <el-menu-item index="/home">
       <el-icon><IconMenu /></el-icon>
       <span>数据管理</span>
     </el-menu-item>

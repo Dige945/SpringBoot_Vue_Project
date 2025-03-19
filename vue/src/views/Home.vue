@@ -1,5 +1,5 @@
 <template>
-  <el-container>
+  <el-container style="width: 1150px">
     <el-header style="height: 100px;text-align: left">
       <div style="height: 50px;margin-top: 20px">
         <el-button type="primary" style="margin-left: 10px" @click="add">新增</el-button>
@@ -15,7 +15,7 @@
     </el-header>
     <el-main>
       <el-table
-          :data="tableData" border style="width: 1200px"
+          :data="tableData" border style="width: 1000px"
           stripe
       >
         <el-table-column prop="id" label="ID" style="width: 100px" />
@@ -23,7 +23,7 @@
         <el-table-column prop="nickname" label="昵称" style="width: 200px;"/>
         <el-table-column prop="age" label="年龄" style="width: 100px"/>
         <el-table-column prop="sex" label="性别" style="width: 50px" />
-        <el-table-column fixed="right" label="Operations" min-width="80px">
+        <el-table-column fixed="right" label="Operations" min-width="60px">
           <template #default = "scope">
             <el-popconfirm title="Are you sure to delete this?" @confirm = "handleDelete(scope.row.id)">
               <template #reference>
